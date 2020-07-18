@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Foddez</string>
+    <string name="enter_mobile_sub_title">We will send you an <b>One Time password</b> on this mobile number</string>
+    <string name="otp_terms">Tap Continue to accept <b>Foddez.Com</b> Terms and Conditions</string>
+    <string name="terms_of_service">By continue, i accept terms of services</string>
+</resources>

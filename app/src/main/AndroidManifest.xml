@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.foddez.service">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/foddez_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:icon">
+        <activity android:name=".PaymentMethod"></activity>
+        <activity
+            android:name=".AboutUs"
+            android:label=""
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".ContactUs" />
+        <activity android:name=".ConfirmOrder" />
+        <activity android:name=".EditSavedAddress" />
+        <activity android:name=".SavedAddress" />
+        <activity android:name=".EditProfile" />
+        <activity
+            android:name=".UserProfile"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HomeGoogleMapLocation"
+            android:label="Set delivery location"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeChangeLocation" />
+        </activity>
+        <activity
+            android:name=".HomeChangeLocation"
+            android:label=""
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home" />
+        </activity> <!-- <activity android:name=".Test"></activity> -->
+        <activity
+            android:name=".ProductList"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BusinessList" />
+        </activity>
+        <activity android:name=".BusinessList" />
+        <activity android:name=".Home" />
+        <activity
+            android:name=".GoogleMapLocation"
+            android:label="Set delivery location"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWhite">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SearchAddress" />
+        </activity>
+        <activity
+            android:name=".SearchAddress"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWhite" />
+        <activity
+            android:name=".OtpVerification"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWhite">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".EnterMobile" />
+        </activity>
+        <activity
+            android:name=".EnterMobile"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

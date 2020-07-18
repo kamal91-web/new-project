@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".EditProfile">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:elevation="0dp"
+        app:elevation="0dp">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/z_toolbar"
+            app:title=""
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="0dp"/>
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txt_user_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Profile"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/color_black"/>
+        <TextView
+            android:id="@+id/txt_user_edit_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_user_mobile"
+            android:text="Your Invoice will generate in this detail "
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+
+        <View
+            android:id="@+id/hr_line"
+            android:layout_below="@+id/txt_user_edit_profile"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#c0c0c0"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/hr_line"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="50dp">
+            <EditText
+                android:id="@+id/txt_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Full Name"
+                android:singleLine="true"
+                android:inputType="textCapCharacters"/>
+            <EditText
+                android:id="@+id/txt_user_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:hint="Email ID"
+                android:singleLine="true"
+                android:inputType="textEmailAddress"/>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnUpdateProfile"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="30dp"
+            android:enabled="false"
+            android:clickable="false"
+            android:text="Update"
+            android:textSize="20dp"
+            android:textStyle="bold"
+           android:layout_alignParentBottom="true"
+            android:textColor="@color/white"
+            android:background="@drawable/button_background_desable"/>
+
+    </RelativeLayout>
+</LinearLayout>
